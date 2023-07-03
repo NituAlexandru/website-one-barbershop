@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--Browser information/SEO-Not visible in website-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BarberShop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!--Visible on website-->
+  <body>
+    <!--Header-->
+    <header>
+      <a href="index.html">
+        <img src="images/logo.svg" alt="BarberShop logo" width="69" height="56"
+      /></a>
+      <!-- Website Navigation -->
+      <nav>
+        <ul>
+          <li><a href="">About</a></li>
+          <li><a href="">Services and prices</a></li>
+          <li><a href="">Barbers</a></li>
+          <li><a href="">Contacts</a></li>
+        </ul>
+      </nav>
+      <a href="tel:+380441111111">+38 044 111 11 11</a>
+      <button>Book a Service</button>
+      <!--
+              The links can be external, but it is recommended to use target="_blank", so users
+              don't lose their activity on our site.
+
+              rel = "noopener" which you use on all links that open in new tabs using target="_blank".
+              There are security implications if you don't use the noopener value on your links that open in
+              new tabs. A malicious attacker can use the window.opener object to change the content and
+              home page location.
+
+
+              rel="noreferrer" can serve a similar purpose to noopener, especially in older browsers. Therefore, it has
+              meaning to use both. In addition, the noreferrer can affect the analysis and report the traffic as direct
+              instead of referrer.
+
+
+              rel="nofollow" will inform search engines not to pass the link to the linked page and will not pass to
+              PageRank. You can think of it as a value that is used when you want to connect to a
+              another page, but without "approving" it. It is the only rel value in this list with a tangible effect on
+              SEO efforts.
+            -->
+      <!-- Section for links to Youtube/Facebook -->
+      <div>
+        <a
+          href="https://www.youtube.com"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          >Youtube</a
+        >
+        <a
+          href="https://www.instagram.com"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          >Instagram</a
+        >
+        <img src="images/line.svg" alt="line" width="1" height="60" />
+      </div>
+    </header>
+    <!--
+            Advantages of main vs div:
+            - Easier to read by the developer ('no div soup')
+            - Accessible website for people with disabilities (ARIA)
+            - Better semantics -> better SEO -> easier to read by indexing engines
+        -->
+    <main>
+      <!--Hero Section-->
+      <section>
+        <img src="images/line.svg" alt="Line" width="1" height="60" />
+        <h2>A hair salon for men in Kyiv</h2>
+        <h1>BarberShop</h1>
+        <p>
+          We are experts in trendy men&apos;s haircuts. We work quickly,
+          carefully, and tastefully.
+        </p>
+        <img src="images/slider-navigation.svg" alt="Navigation Slider" />
+        <ul>
+          <li>
+            <span><img src="images/line.svg" alt="Line" />Back</span>
+          </li>
+          <li>
+            <span><img src="images/line.svg" alt="Line" />Next</span>
+          </li>
+        </ul>
+      </section>
+      <!--About Section-->
+      <section>
+        <ul>
+          <li>
+            <img
+              src="images/barber-img-1.png"
+              alt="Barber shaving chin"
+              width="270"
+              height="445"
+            />
+          </li>
+          <li>
+            <img
+              src="images/barber-img-2.png"
+              alt="Barber defining haircut with razor"
+              width="270"
+              height="445"
+            />
+          </li>
+          <li>
+            <img src="images/line.svg" alt="Line" width="1" height="60" />
+          </li>
+        </ul>
+        <h3>About</h3>
+        <h2>The Best Barbershop in Your City</h2>
+        <p>
+          If you want to add more confidence to your image, you are definitely
+          in the right place.
+        </p>
+        <p>
+          We are a team that never rests on its laurels and yearns for change.
+          And once you fall into the hands of our master, you will never be the
+          same again. We are a team that is always on the same wavelength with
+          clients. Therefore, we are always ready to improve everyone who comes
+          to us!
+        </p>
+        <button>book a service</button>
+      </section>
+      <!--Services and Prices section-->
+      <section>
+        <img src="images/line.svg" alt="Line" width="1" height="60" />
+        <h3>Spend time in the company of the best craftsmen</h3>
+        <h2>Services and Prices</h2>
+        <ul>
+          <li><span>Men&apos;s Haircut</span><span>from 300 UAH </span></li>
+          <li><span>Beard Trim</span><span>from 200 UAH</span></li>
+          <li><span>Mustache Trim</span><span>from 200 UAH</span></li>
+          <li><span>Straight Razor Shave</span><span>from 200 UAH</span></li>
+        </ul>
+        <ul>
+          <li><span>Trainee Haircut </span><span>from 50 UAH </span></li>
+          <li><span>Buzz Cut</span><span>from 200 UAH </span></li>
+          <li>
+            <span>Kids Haircut (&lt;12 y.o.)</span><span>from 200 UAH </span>
+          </li>
+          <li><span>Gray Coverage</span><span>from 200 UAH </span></li>
+        </ul>
+        <button>Book a Service</button>
+      </section>
+      <!--Recommendations-->
+      <div>
+        <div>
+          <ul>
+            <li>
+              <span>600</span><sup>+</sup
+              ><span>Satisfied Customers per Day</span>
+            </li>
+            <li>
+              <span>50</span><sup>+</sup><span>Excellent Service Awards</span>
+            </li>
+            <li>
+              <span>20</span><sup>+</sup><span>The Best Barbers of Kyiv</span>
+            </li>
+            <li>
+              <span>100</span><sup>+</sup
+              ><span>Gifts for Regular Customers</span>
+            </li>
+          </ul>
+        </div>
+        <img src="images/line.svg" alt="Line" width="1" height="60" />
+        <article>
+          <h3>Old school</h3>
+          <h2>Why do they come to us?</h2>
+          <p>
+            Only good things are said about us. But it is better to see and feel
+            1 time than to read 10 times.
+          </p>
+        </article>
+      </div>
+      <!--Our Barbers-->
+      <!--TO DO social media for each one-->
+      <section>
+        <img src="images/line.svg" alt="Line" width="1" height="60" />
+        <h3>for true connoisseurs of the atmosphere</h3>
+        <h2>Our Barbers</h2>
+        <ul>
+          <li><img src="images/john-smith.png" alt="John Smith" /></li>
+          <li>John Smith</li>
+          <li>Extreme Barber</li>
+        </ul>
+        <ul>
+          <li><img src="images/michele-doe.png" alt="Michele Doe" /></li>
+          <li>Michele Doe</li>
+          <li>Extreme Barber</li>
+        </ul>
+        <ul>
+          <li><img src="images/alan-black.png" alt="Alan Black" /></li>
+          <li>Alan Black</li>
+          <li>Extreme Barber</li>
+        </ul>
+      </section>
+      <!--Last section with images-->
+      <section>
+        <img src="images/line.svg" alt="Line" width="1" height="60" />
+        <h3>In Latin, "barba" means "beard"</h3>
+        <ul>
+          <li>
+            <img
+              src="images/last-section-img-1.png"
+              alt="Cutting hair with machine"
+              width="270"
+              height="360"
+            />
+          </li>
+          <li>
+            <img
+              src="images/last-section-img-2.png"
+              alt="Barber shaving client"
+              width="270"
+              height="360"
+            />
+          </li>
+          <li>
+            <img
+              src="images/last-section-img-3.png"
+              alt="Client with towel on face"
+              width="270"
+              height="360"
+            />
+          </li>
+          <li>
+            <img
+              src="images/last-section-img-4.png"
+              alt="Hairline defining with razor"
+              width="270"
+              height="360"
+            />
+          </li>
+        </ul>
+      </section>
+      <!--Book a Service section-->
+      <section>
+        <h2>Book a Service</h2>
+        <form>
+          <div class="form-group">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Name*"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              placeholder="Telephone*"
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              required
+              placeholder="Message"
+            ></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+      <!--Contacts-->
+      <section>
+        <h2>Contacts</h2>
+      </section>
+    </main>
+  </body>
+</html>
